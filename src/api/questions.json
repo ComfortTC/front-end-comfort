@@ -1,0 +1,25 @@
+{
+  "questions": [
+    {
+      "code": "Q1",
+      "text": "Do you require public liability",
+      "type": "bool",
+      "trueLabel": "YES",
+      "falseLabel": "NO",
+      "controlType": "RadioButtons"
+    },
+    {
+      "code": "Q2",
+      "text": "Please enter your company name",
+      "type": "text",
+      "placeholder": "John Doe",
+      "conditions": [
+        {
+          "question": "Q1",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}
